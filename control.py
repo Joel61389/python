@@ -18,18 +18,19 @@
 
 # # create a program that checks between 3 numbers which one is the biggest
 # #method 1:using the control statement
-# num1 = int(input("Enter a first number  :"))
-# num2 = int(input("enter a second number :"))
-# num3 =int(input("Enter a second number :" ))    
+num1 = int(input("Enter a first number  :"))
+num2 = int(input("enter a second number :"))
+num3 =int(input("Enter a second number :" ))    
 
-# if ((num1 > num2 )& (num1 > num3)):
-#     print(f"The largest number is {num1}")
+if ((num1 >= num2 )& (num1 >= num3)):
+    print(f"The largest number is {num1}")
 
-# elif ((num2 > num1) & (num2 > num3)):
-#     print(f"The largest number is {num2}")
-
-# else :
-#     print(f"The largset number is {num3}")
+elif ((num2 >= num1) & (num2 >= num3)):
+    print(f"The largest number is {num2}")
+elif ((num3>=num1)&(num3>=num2)):
+    print(f"The largest number is {num3} ")
+else :
+    print("All the numbers are equal")
 
 
 
@@ -78,26 +79,27 @@
 #- For the next 100 units (101-200): 35 per unit
 #- For the next 100 units (201-300): 45 per unit
 
-num_units = float(input("Enter the number of units bought :"))
-if (num_units < 0):
-    print("invalid input")
+# num_units = float(input("Enter the number of units bought :"))
+# if (num_units < 0):
+#     print("invalid input")
 
-elif (num_units<=100):
-     bill = num_units * 25
-     print(f"Your bill is {bill}")
+# elif (num_units<=100):
+#      bill = num_units * 25
+#      print(f"Your bill is {bill}")
 
-elif(num_units<=200):
-    bill = (100 * 25) + ((num_units - 100) * 35)
-    print(f"your bill is {bill}")
+# elif(num_units<=200):
+#     bill = (100 * 25) + ((num_units - 100) * 35)
+#     print(f"your bill is {bill}")
     
 
-elif(num_units<=300):
-    bill = (100 * 25) + (100 * 35) + ((num_units - 200) * 45)
-    print(f"your bill is {bill}")
+# elif(num_units<=300):
+#     bill = (100 * 25) + (100 * 35) + ((num_units - 200) * 45)
+#     print(f"your bill is {bill}")
 
 
-else: (num_units>300)
-print(f"your bill is {num_units*67}")
+# else: 
+#     (num_units>300)
+#     print(f"your bill is {num_units*67}")
 
 
 
